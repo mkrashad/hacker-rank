@@ -8,8 +8,12 @@ if __name__ == '__main__':
 
     name = [students[i][0] for i in range(len(students))]
     score = [students[i][1] for i in range(len(students))]
-
     print(students)
     print(name)
+    print(score)
+
     my_sort = sorted(score, reverse=True)
     print(my_sort[len(my_sort)-2])
+
+    for i in students:
+        print(i)
